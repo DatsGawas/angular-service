@@ -1,0 +1,23 @@
+
+<div class="card">
+  <div class="card-header">
+    Reader Details
+  </div>
+  <div class="card-body">
+    <form>
+
+      <div class="form-group">
+        <label for="name">Reader Name</label>
+        <input type="text" [(ngModel)]="selectedReader.name" name="'name'" class="form-control" id="name">
+      </div>
+
+      <div class="form-group">
+        <label for="exampleInputEmail1">Week Reading Goal</label>
+        <input type="number" [(ngModel)]="selectedReader.weeklyreadingGoal" name="'weeklyreadingGoal'" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      </div>
+
+      <button type="submit" class="btn btn-primary">Update</button>
+    </form>
+  </div>
+</div>
+
