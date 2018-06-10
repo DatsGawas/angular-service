@@ -7,38 +7,9 @@ import {HttpClient, HttpHeaders} from "@angular/common/http";
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  data: any;
-  foods: any;
-  showTest: boolean;
+  name: any;
   constructor(private _http: HttpClient) {
-    this.showTest = false;
-
-    this.foods = [
-      {value: 'steak-0', viewValue: 'Steak'},
-      {value: 'pizza-1', viewValue: 'Pizza'},
-      {value: 'tacos-2', viewValue: 'Tacos'}
-    ];
+  this.name = 'datta';
   }
-
-  getData() {
-    const headers = new HttpHeaders().append(
-      'Access-Control-Allow-Origin', '*'
-    );
-    let response: any;
-    this._http.get('https://mfapps.indiatimes.com/ET_Calculators/getBankDetailsByIfsc.htm?ifsccode=HDFC0000486', { headers }).subscribe(
-      res => {
-      response = res;
-    },
-    err => {
-      console.log('Error occured');
-    },
-      () => {
-        if (response) {
-          this.data = response;
-        }
-      }
-      );
-  }
-
 
 }
