@@ -8,6 +8,7 @@ import {AppRoutingModule} from "./app.routing.module";
 import {DashboardComponent} from "./dashboard/dashboard/dashboard.component";
 import { EditBookComponent } from './edit-book/edit-book/edit-book.component';
 import { EditReaderComponent } from './edit-reader/edit-reader/edit-reader.component';
+import { CoreModule } from './core/core.module';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,7 @@ import { EditReaderComponent } from './edit-reader/edit-reader/edit-reader.compo
 
 ],
   imports: [
-    BrowserModule, AppRoutingModule, FormsModule, HttpClientModule
+    BrowserModule, AppRoutingModule, FormsModule, HttpClientModule, CoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]

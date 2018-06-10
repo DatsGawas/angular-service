@@ -19,7 +19,7 @@
             <tbody>
             <tr *ngFor="let book of allBooks">
               <td>{{book.title}}</td>
-              <td (click)="editBookDetails(book)">edit</td>
+              <td (click)="editBookDetails(book)" style="cursor: pointer">edit</td>
               <td>delete</td>
             </tr>
             </tbody>
@@ -45,7 +45,7 @@
             <tbody>
             <tr *ngFor="let reader of allReaders">
               <td>{{reader.name}}</td>
-              <td (click)="editReaderDetails(reader)">edit</td>
+              <td (click)="editReaderDetails(reader)" style="cursor: pointer">edit</td>
               <td>delete</td>
             </tr>
             </tbody>
